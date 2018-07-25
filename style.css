@@ -1,0 +1,52 @@
+body{
+    margin:0px;
+}
+.wrapper {
+    width:1400px;
+    background: linear-gradient(-135deg, orange, red,orange 60%, cyan);
+    border-radius: 25px;
+    }
+.row1, .row2{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    display: block;
+    vertical-align: top;
+    padding:0px 0px;
+}
+.row1 img,.row2 img{
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 25px;
+    background: grey;
+    border:2px solid lightgreen;
+    height: 250px;
+    width: 280px;
+    margin:10px ;
+    padding:20px;
+}
+.row1{
+    border-radius: 25px;
+}
+
+h1{
+    background: linear-gradient(135deg, white,lightblue,lightgreen, white);
+    margin: 0px;
+    text-align: center;
+}
+@media only screen and (max-width:1200px){
+    .wrapper {
+        width:400px;
+        margin: 0px; ;
+        }
+    .row2{
+        display: none;
+    }
+    .row1 {
+        display: block;
+    }
+    .row1 img,.row2 img{
+        margin:0px 5px 0px 5px;
+        margin-left: 30px;
+    }
+    h1{
+        text-align: center;
+    }
+}
